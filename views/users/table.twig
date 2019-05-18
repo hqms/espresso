@@ -1,0 +1,21 @@
+{% extends "layout.twig" %}
+
+{% block body %}
+<table class="table ">
+    <thead class="thead-dark">
+        <tr>
+            <th>User</th>
+            <th>Address</th>
+            <th>Detail</th>
+        </tr>
+    </thead>
+
+{% for user in users %}
+    <tr>
+        <td>{{user.name}}</td>
+        <td>{{user.address}}</td>
+        <td>Detail</td>
+    </tr>
+{% endfor %}
+</table>
+{% endblock %}
